@@ -1,189 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Jael Guillén González - CV</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body {
+          width: 210mm;
+          height: 297mm;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          background: white !important;
+        }
+
+        /* Fuerza una sola página */
+        * {
+          page-break-inside: avoid;
+        }
+
+        /* Quita sombras que a veces empujan contenido */
+        .shadow-xl {
+          box-shadow: none !important;
+        }
+      }
+
+      @media print {
+  /* Fuerza que el contenedor ocupe toda la hoja */
+  body > div {
+    min-height: 297mm;
+  }
+
+  /* Estira la sidebar hasta el fondo */
+  aside {
+    min-height: 297mm;
+  }
+}
+
+    </style>
   </head>
-  <body>
-    <div class="cv-container">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="profile">
+
+  <body class="bg-gray-200 font-sans">
+    <div class="max-w-5xl mx-auto bg-white shadow-xl grid grid-cols-3">
+      <!-- SIDEBAR -->
+      <aside class="bg-[#586e7e] text-white">
+        <div class="flex flex-col items-center text-center">
           <img
             src="./assets/images/foto-cv-1.jpeg"
             alt="Foto de perfil"
-            class="profile-img"
+            class="w-40 h-40 rounded-full object-cover border-4 border-white my-6"
           />
-          <h1>Carlos Jael Guillén González</h1>
-          <p class="profession">
-            Desarrollador Full Stack | Ingeniería Telemática
-          </p>
         </div>
 
-        <section>
-          <h2>Contacto</h2>
-          <ul>
-            <li>
-              Email (personal):
-              <a href="mailto:gcarlosjael@gmail.com">gcarlosjael@gmail.com</a>
-            </li>
-            <li>
-              Correo institucional:
-              <a href="mailto:cguilleng1800@alumno.ipn.mx"
-                >cguilleng1800@alumno.ipn.mx</a
-              >
-            </li>
-            <li>Tel: +52 55 83812546</li>
+        <!-- Contacto -->
+        <section class="mt-1">
+          <h2 class="text-lg font-bold px-6 py-1 mb-3 bg-[#728698] uppercase">
+            Contacto
+          </h2>
+          <ul class="text-sm space-y-2 px-6">
+            <li>Email: gcarlosjael@gmail.com</li>
+            <li>Institucional: cguilleng1800@alumno.ipn.mx</li>
+            <li>Tel: +52 55 8381 2546</li>
             <li>
               LinkedIn:
               <a
                 href="https://www.linkedin.com/in/guill%C3%A9n-gonz%C3%A1lez-carlos-jael-779ab2312/"
-                >Perfil</a
+                class="underline"
               >
+                Perfil
+              </a>
             </li>
             <li>
-              GitHub: <a href="https://github.com/carlos777g/">carlos777g</a>
+              GitHub:
+              <a href="https://github.com/carlos777g" class="underline">
+                carlos777g
+              </a>
             </li>
           </ul>
         </section>
 
-        <section>
-          <h2>Habilidades Técnicas</h2>
-          <ul>
-            <li>
-              <strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+),
-              React.js
-            </li>
-            <li><strong>Backend:</strong> Node.js, APIs REST, PostgreSQL</li>
-            <li><strong>Herramientas:</strong> Git, GitHub, Docker, Notion</li>
-            <li><strong>Metodologías ágiles:</strong>Scrum</li>
-            <li>
-              <strong>Redes:</strong> CCNA, fundamentos de routing/switching
-            </li>
-            <li>
-              <strong>Sistemas Operativos:</strong> Experiencia en Linux (Debian
-              como SO principal), instalación en máquinas físicas y particiones,
-              gestión de usuarios, procesos, permisos, redes y paquetes.
-              Conocimientos intermedios en Bash scripting y servicios del
-              sistema (systemctl, journalctl).
-            </li>
+        <!-- Educación -->
+        <section class="mt-8">
+          <h2 class="text-lg font-bold uppercase bg-[#728698] px-6 py-1 mb-3">
+            Educación
+          </h2>
+          <div class="text-sm space-y-3 px-6">
+            <div>
+              <p class="font-semibold">Ingeniería en Telemática</p>
+              <p class="text-slate-200">UPIITA - IPN</p>
+              <p class="text-slate-300 text-xs">2021 – Actualidad</p>
+            </div>
+            <div>
+              <p class="font-semibold">Técnico en Telecomunicaciones</p>
+              <p class="text-slate-200">CECyT 11 - IPN</p>
+              <p class="text-slate-300 text-xs">2019 – 2021</p>
+            </div>
+          </div>
+        </section>
 
-            <!-- <li><strong>Sistemas Operativos:</strong> Experiencia en Linux (instalación en máquinas físicas y particiones, uso de terminal, comandos básicos). Estudio previo para certificación LPIC-1.</li> -->
+        <!-- Habilidades -->
+        <section class="mt-8">
+          <h2 class="text-lg font-bold uppercase bg-[#728698] px-6 py-1 mb-3">
+            Habilidades Técnicas
+          </h2>
+          <ul class="text-sm space-y-1 list-disc list-inside px-6">
+            <li>JavaScript (ES6+), Python</li>
+            <li>HTML5, CSS3, React</li>
+            <li>Node.js, REST APIs</li>
+            <li>PostgreSQL</li>
+            <li>Git, GitHub, Docker</li>
+            <li>Linux (Debian)</li>
+            <li>CCNA fundamentals</li>
           </ul>
         </section>
 
-        <section>
-          <h2>Idiomas</h2>
-          <ul>
+        <!-- Idiomas -->
+        <section class="mt-4 mb-4">
+          <h2 class="text-lg font-bold uppercase bg-[#728698] px-6 py-1 mb-3">
+            Idiomas
+          </h2>
+          <ul class="text-sm space-y-1 px-6">
             <li>Español: Nativo</li>
             <li>Inglés: Intermedio</li>
           </ul>
         </section>
       </aside>
 
-      <!-- Main content -->
-      <main class="main">
+      <!-- MAIN -->
+      <main class="md:col-span-2 p-8">
+        <!-- Perfil -->
         <section>
-          <h2>Sobre Mí</h2>
-          <p>
-            Desarrollador Full Stack con experiencia en
-            <strong>React, Node.js y Python</strong>, especializado en
-            aplicaciones escalables y APIs eficientes. Estudiante de Ingeniería
-            Telemática con conocimientos en
-            <strong>redes y telecomunicaciones (CCNA)</strong>. Apasionado por
-            la innovación y el aprendizaje continuo.
+          <h1
+            class="text-5xl font-bold uppercase text-[#586e7e] tracking-wider leading-tight w-10/12"
+          >
+            Carlos Jael Guillén González
+          </h1>
+
+          <p class="text-lg font-medium mt-1">Telematics Engineering Student</p>
+          <div class="border-b border-slate-500 pb-1 mb-9 w-40"></div>
+        </section>
+        <section>
+          <h2 class="text-lg font-bold uppercase text-[#586e7e] mb-2">
+            Perfil Profesional
+          </h2>
+          <p class="text-sm leading-relaxed text-gray-900">
+            Estudiante de Ingeniería en Telemática con experiencia práctica en
+            desarrollo de aplicaciones web utilizando
+            <strong>React, Node.js y Python</strong>. Sólidos fundamentos en
+            <strong>sistemas, redes y arquitectura de software</strong>.
+            Interesado en desarrollo de software a escala, calidad de código y
+            aprendizaje continuo.
           </p>
         </section>
 
-        <section>
-          <h2>Experiencia Laboral</h2>
-          <div class="job">
-            <h3>Desarrollador Full Stack</h3>
-            <p class="company">Freelancer | 2024 - Presente</p>
-            <ul>
+        <!-- Experiencia -->
+        <section class="mt-8">
+          <h2 class="text-lg font-bold uppercase text-[#586e7e] mb-4">
+            Experiencia
+          </h2>
+
+          <div class="mb-6">
+            <h3 class="font-semibold">Desarrollador Full Stack (Freelance)</h3>
+            <p class="text-sm italic text-gray-500">2024 – Presente</p>
+            <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+              <li>Desarrollo de aplicaciones web con React y Node.js.</li>
+              <li>Diseño e implementación de APIs REST.</li>
               <li>
-                Desarrollé aplicaciones web interactivas con
-                <strong>React y Node.js</strong>.
+                Creación de una API de web scraping en Python para precios de
+                criptomonedas.
               </li>
-              <li>
-                Desarrollé una <strong>API de web scraping</strong> para obtener
-                precios de criptomonedas en tiempo real y mostrarlos en una
-                aplicación web.
-              </li>
-              <li>
-                Manejo de <strong>bases de datos SQL</strong> para almacenar y
-                consultar información.
-              </li>
+              <li>Gestión de bases de datos SQL.</li>
             </ul>
           </div>
         </section>
 
-        <section>
-          <h2>Experiencia Técnica Avanzada</h2>
-          <div class="job">
-            <h3>Proyectos de Investigación y Algoritmos</h3>
-            <p class="company">Ingeniería Telemática | 2021 - Actualidad</p>
-            <ul>
-              <li>
-                Implementación de <strong>métodos de entropía</strong> en
-                canciones e imágenes (Python, NumPy).
-              </li>
-              <li>
-                Compresión con <strong>Shannon-Fano</strong> y curvas de
-                <strong>Hilbert</strong>.
-              </li>
-              <li>
-                Procesamiento de imágenes con
-                <strong>lógica difusa</strong> para detección de bordes.
-              </li>
-              <li>
-                Análisis de frecuencias utilizando
-                <strong>transformadas de Fourier</strong>.
-              </li>
-            </ul>
-          </div>
-        </section>
+        <!-- Proyectos -->
+        <section class="mt-8">
+          <h2 class="text-lg font-bold uppercase text-[#586e7e] mb-4">
+            Proyectos Destacados
+          </h2>
 
-        <section>
-          <h2>Proyectos Destacados</h2>
-          <ul>
+          <ul class="list-disc list-inside text-sm space-y-2">
             <li>
-              <a href="https://github.com/carlos777g/sistema-de-ventas"
-                >Sistema de Ventas</a
-              >
-              – Proyecto en desarrollo full-stack con <strong>React</strong> y
-              <strong>Node.js</strong> para comprender mejor
-              <strong>arquitecturas de software</strong>.
+              <strong>Sistema de Ventas:</strong>
+              Aplicación full-stack con React y Node.js enfocada en arquitectura
+              y flujo de datos.
             </li>
             <li>
-              <a href="https://github.com/carlos777g/hacking-con-buscadores"
-                >Hacking con Buscadores</a
-              >
-              - Herramienta CLI en Python para automatizar búsquedas.
+              <strong>Search Automation CLI:</strong>
+              Herramienta en Python para automatización de búsquedas.
             </li>
             <li>
-              <a href="https://github.com/carlos777g/blockchain-web"
-                >Blockchain API</a
-              >
-              - API web para precios de criptomonedas.
+              <strong>Cryptocurrency API:</strong>
+              API web para consulta de precios en tiempo real.
             </li>
           </ul>
         </section>
 
-        <section>
-          <h2>Educación</h2>
-          <ul>
-            <li>
-              <strong>Ingeniería en Telemática</strong> (2021 - Actualidad)<br />
-              UPIITA - IPN
-            </li>
-            <li>
-              <strong>Carrera Técnica en Telecomunicaciones</strong> (2019 -
-              2021)<br />
-              CECyT 11 - IPN
-            </li>
+        <!-- Experiencia técnica -->
+        <section class="mt-8">
+          <h2 class="text-lg font-bold uppercase text-[#586e7e] mb-4">
+            Experiencia Técnica Académica
+          </h2>
+
+          <ul class="list-disc list-inside text-sm space-y-1">
+            <li>Análisis de entropía en señales e imágenes (Python, NumPy).</li>
+            <li>Compresión de datos con Shannon–Fano.</li>
+            <li>Análisis en frecuencia mediante Transformada de Fourier.</li>
+            <li>Procesamiento de imágenes con lógica difusa.</li>
           </ul>
         </section>
       </main>
