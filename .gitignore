@@ -1,1 +1,39 @@
-node_modules
+# --- LaTeX (Archivos auxiliares) ---
+*.aux
+*.fdb_latexmk
+*.fls
+*.gz
+*.log
+*.out
+*.toc
+*.pdf
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.synctex.gz
+
+# --- Node.js & Web ---
+node_modules/
+dist/
+build/
+.npm
+package-lock.json
+package.json
+yarn.lock
+
+# --- Configuration & Secrets ---
+.env
+.env.*
+*.yaml
+*.yml
+
+# --- System & Editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
