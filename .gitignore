@@ -21,7 +21,6 @@ dist/
 build/
 .npm
 package-lock.json
-package.json
 yarn.lock
 
 # --- Configuration & Secrets ---
