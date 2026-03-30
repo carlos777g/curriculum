@@ -20,6 +20,10 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
+
+\usepackage[sfdefault]{inter} % Una fuente muy usada en interfaces modernas
+\renewcommand{\familydefault}{\sfdefault}
+
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -82,91 +86,95 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{1pt}
-    Mexico City, Mexico \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +52 55 8381 2546 ~ 
-    \href{mailto:gcarlosjael@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{gcarlosjael@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/carlos-jael-guill%C3%A9n-gonz%C3%A1lez/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/carlos-jael}} ~
-    \href{https://github.com/carlos777g}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/carlos777g}}
-    \href{https://carworks.dev}{\raisebox{-0.2\height}\faGlobe\ \underline{carworks.dev}} ~
-    \vspace{-8pt}
+  {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{1pt}
+  Mexico City, Mexico \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +52 55 8381 2546 ~
+  \href{mailto:gcarlosjael@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{gcarlosjael@gmail.com}} ~
+  \href{https://www.linkedin.com/in/carlos-jael-guill%C3%A9n-gonz%C3%A1lez/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/carlos-jael}} ~
+  \href{https://github.com/carlos777g}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/carlos777g}}
+  \href{https://carworks.dev}{\raisebox{-0.2\height}\faGlobe\ \underline{carworks.dev}} ~
+  \vspace{-8pt}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {National Polytechnic Institute (IPN - UPIITA)}{Aug. 2021 -- Present}
-      {B.Sc. in Telematics Engineering}{Mexico City, Mexico}
-    \resumeSubheading
-      {National Polytechnic Institute (IPN - CECyT 11)}{Aug. 2019 -- June 2021}
-      {Telecommunications Technician Degree}{Mexico City, Mexico}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Polytechnic Institute (IPN - UPIITA)}{Aug. 2021 -- Present}
+{B.Sc. in Telematics Engineering}{Mexico City, Mexico}
+% \resumeSubheading
+%   {National Polytechnic Institute (IPN - CECyT 11)}{Aug. 2019 -- June 2021}
+%   {Telecommunications Technician Degree}{Mexico City, Mexico}
+\resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
+%-----------Technical SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: JavaScript (ES6+), Python, SQL, C, HTML/CSS} \\
-     \textbf{Technologies}{: React, Node.js, Tailwind CSS, PostgreSQL, REST APIs, Figma} \\
-     \textbf{Tools \& Infrastructure}{: Linux (SysAdmin), Git/GitHub, Docker, Cloudflare Zero Trust, SSH Tunneling} \\
-     \textbf{Networking}{: CCNA Fundamentals, Network Security, Firewalls, Reverse Proxy}
-    }}
- \end{itemize}
- \vspace{-16pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{JavaScript}{: Proficient in Node.js backend development, implementing OAuth2/Google Authentication, and RESTful API architecture.} \\
+        \textbf{Python}{: Focused on data science workflows, and system automation.}\\
+        \textbf{Shell Scripting}{: Experienced in automating Linux workflows.}\\
+        \textbf{Frameworks \& Libraries}{: React, Node.js, Express, Tailwind CSS.} \\
+        \textbf{Tools}{: Linux, Git/GitHub, Docker, PostgreSQL, Cloudflare Zero Trust, SSH, LaTeX, HTML/CSS, Figma.} \\
+        \textbf{Concepts}{: Object-Oriented Programming (OPP), RESTful APIs, Agile Methodologies (Scrum).} \\
+        }}
+\end{itemize}
+\vspace{3pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Freelance Full Stack Developer}{Dec. 2024 -- Present}
-      {Remote}{Mexico City, Mexico}
-      \resumeItemListStart
-        \resumeItem{Architected and deployed scalable web applications using \textbf{React} and \textbf{Node.js}, optimizing for responsive UI and performance.}
-        \resumeItem{Implemented secure \textbf{RESTful APIs} to manage data flow between client-side components and PostgreSQL databases.}
-        \resumeItem{Managed version control and deployment workflows using \textbf{Git} and \textbf{GitHub}, ensuring high code quality through documentation.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-16pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Freelance Full Stack Developer}{Dec. 2024 -- Present}
+{Remote}{Mexico City, Mexico}
+\resumeItemListStart
+\resumeItem{\textbf{Software Architecture \& Frontend:} Engineered a high-performance personal portfolio and technical blog using \textbf{React} and \textbf{Tailwind CSS}, adhering to modular software architecture patterns to ensure maintainability and UI/UX consistency across devices.}
+\resumeItem{\textbf{CI/CD \& Automation:} Streamlined deployment workflows by implementing \textbf{GitHub Actions} for automated testing and continuous integration, reducing manual deployment overhead and ensuring code integrity before production.}
+\resumeItem{\textbf{Web Security \& Infrastructure:} Hardened web application security by deploying \textbf{Cloudflare Zero Trust} and configuring custom WAF rules and Page Rules to mitigate common vulnerabilities and optimize content delivery via a custom domain.}
+\resumeItem{\textbf{Backend \& Auth:} Developed and integrated \textbf{Node.js} RESTful services with \textbf{PostgreSQL}, implementing \textbf{OAuth2} via Google Authentication to secure user data flow and manage session persistence effectively.}
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{3pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Secure Infrastructure \& Remote Access} $|$ \emph{Linux, Cloudflare, SSH}}{2026}
-          \resumeItemListStart
-            \resumeItem{Deployed a Linux-based home server with \textbf{Cloudflare Tunnels} for secure, perimeter-less remote access via SSH.}
-            \resumeItem{Configured strict User/Group permission policies and a \textbf{jump-host architecture} for secure internal network management.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Cellular Systems Simulator} $|$ \emph{Python, NumPy, Matplotlib}}{2025}
-          \resumeItemListStart
-            \resumeItem{Developed a simulation tool for \textbf{RSSI analysis} using COST231 and Lognormal propagation models to optimize signal coverage.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Cryptocurrency API} $|$ \emph{Node.js, REST API}}{2025}
-          \resumeItemListStart
-            \resumeItem{Built a real-time web API for cryptocurrency price queries, implementing data parsing and asynchronous communication.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Secure Edge Infrastructure \& Virtual Lab} $|$ \emph{Linux (Debian/Arch), Cloudflare Tunnels, SSH}}{2026}
+\resumeItemListStart
+\resumeItem{\textbf{System Design:} Engineered a zero-trust remote access architecture using \textbf{Cloudflare Tunnels}, enabling perimeter-less SSH access to a private homelab without exposing public IP addresses.}
+\resumeItem{\textbf{Security \& Access:} Implemented a \textbf{Jump-Host (Bastion) architecture} integrated with Cloudflare Access (Identity-based policies) to manage secure lateral movement between multiple internal nodes.}
+\resumeItem{\textbf{Compliance:} Enforced the \textbf{Principle of Least Privilege (PoLP)} through granular Linux user/group permissions and hardened SSH configurations (Key-based auth, disabled root login) to simulate production-grade security environments.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cellular Propagation \& Network Simulator} $|$ \emph{Python}}{2025}
+\resumeItemListStart
+    \resumeItem{\textbf{Core Engine:} Developed an academic-focused simulation tool to model \textbf{RSSI (Received Signal Strength Indicator)} behavior, implementing \textbf{COST231-Hata} and Lognormal shadowing propagation models.}
+    \resumeItem{\textbf{Analysis:} Generated high-fidelity visual heatmaps to analyze cell coverage and path loss, providing a graphical framework to validate signal degradation theories in urban and suburban environments.}
+    \resumeItem{\textbf{Impact:} Created a modular codebase that allows students to test different frequency bands and antenna heights, bridging the gap between theoretical link budget equations and practical network planning.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{4pt}
 
 %-----------ACADEMIC TECHNICAL EXPERIENCE-----------
-\section{Academic Technical Experience}
-    \resumeItemListStart
-        \resumeItem{\textbf{Signal \& Image Analysis}: Conducted entropy analysis and frequency domain spectral analysis (Fourier Transform) using Python.}
-        \resumeItem{\textbf{Data Compression}: Implemented Shannon-Fano coding algorithms to optimize data storage and transmission efficiency.}
-        \resumeItem{\textbf{Image Processing}: Developed RGB extraction and fuzzy logic modules for advanced digital image manipulation.}
-    \resumeItemListEnd
-\vspace{-5pt}
+% \section{Academic Technical Experience}
+% \resumeItemListStart
+% \resumeItem{\textbf{Signal \& Image Analysis}: Conducted entropy analysis and frequency domain spectral analysis (Fourier Transform) using Python.}
+% \resumeItem{\textbf{Data Compression}: Implemented Shannon-Fano coding algorithms to optimize data storage and transmission efficiency.}
+% \resumeItem{\textbf{Image Processing}: Developed RGB extraction and fuzzy logic modules for advanced digital image manipulation.}
+% \resumeItemListEnd
+% \vspace{-5pt}
 
 %-----------LANGUAGES-----------
 \section{Languages}
-    \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Spanish}{: Native} \\
-     \textbf{English}{: Advanced}
-    }}
-  \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Spanish}{: Native} \\
+        \textbf{English}{: Advanced}
+        }}
+\end{itemize}
 
 \end{document}
