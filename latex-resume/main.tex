@@ -128,21 +128,16 @@
 {Independent Software Developer}{Dec. 2024 -- Present}
 {Full Stack \& DevOps (Personal Research)}{Mexico City, Mexico}
 \resumeItemListStart
-    \resumeItem{\textbf{CI/CD \& Automation:} Orchestrated automated deployment pipelines via \textbf{GitHub Actions} for personal infrastructure and web projects, incorporating automated regression checks prior to production releases.}
     \resumeItem{\textbf{Infrastructure \& Security:} Architected a perimeter-less access system using \textbf{Cloudflare Zero Trust} and Identity-Aware Proxies, eliminating public-facing IPs while hardening Linux nodes (Arch/Debian) under Principle of Least Privilege (PoLP) and RBAC standards.}
+\resumeItem{\textbf{Incident Response \& Root Cause Analysis:} Diagnosed and resolved a production filesystem corruption incident (ext4 metadata\_csum failure) following an unexpected power loss, performing systematic troubleshooting via \texttt{journalctl}, \texttt{fsck}, and \texttt{debugfs} while maintaining remote-only SSH access; safely unmounted and repaired a live filesystem after auditing active processes (\texttt{lsof}, \texttt{fuser}) to prevent service disruption, and identified a corrupted Docker image layer as a secondary fault through comparative re-pull analysis.}
+\resumeItem{\textbf{Systemd \& Service Management:} Administered systemd unit files and drop-in overrides to tune service behavior (transport protocol, environment variables) for a self-hosted reverse tunnel exposing multiple production services (SSH, API, media streaming) without public-facing IPs.}
+    \resumeItem{\textbf{CI/CD \& Automation:} Orchestrated automated deployment pipelines via \textbf{GitHub Actions} for personal infrastructure and web projects, incorporating automated regression checks prior to production releases.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 % \vspace{3pt}
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-
-\resumeProjectHeading
-{\textbf{3D Radiation Pattern Reconstruction System} $|$ \emph{JavaScript, Python}}{Oct. 2025 -- Present}
-\resumeItemListStart
-    \resumeItem{\textbf{Computer Vision \& Data Extraction:} Developed an image processing engine in Python to analyze 2D radiation pattern plots, extracting magnitude versus angle data through automated spatial coordinate mapping.}
-    \resumeItem{\textbf{3D Rendering Pipeline:} Designing a data pipeline to transform 2D extracted metrics into interactive 3D models via Three.js, implementing interpolation algorithms to reconstruct continuous volumetric lobes from discrete measurement sets.}
-\resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{carworks.dev - Full-Stack Portfolio \& Automated Logbook Ecosystem} $|$ \emph{Node.js, React}}{Feb. 2026 -- Present}
@@ -156,13 +151,21 @@
 
 \resumeProjectHeading
 {\textbf{IBM MVP Hackathon} $|$ \emph{Node.js, Express, PostgreSQL, Docker}}{June 2026}
-\resumeItemListStart
-    \resumeItem{\textbf{Concurrency Control:} Built "OfficeSpace" (hybrid workspace booking MVP) in a 6-hour constraint, designing a PostgreSQL schedule overlap detection query and JWT-based RBAC across two independently deployable containerized services.}
-    \resumeItem{\textbf{Distributed Consistency:} Developed "NeoWallet", a P2P transfer API microservice within a 4-hour window; implemented row-level locking (SELECT FOR UPDATE) and a Saga-inspired orchestrator with compensating transactions, achieving over 90\% test coverage.}
-    % \resumeItem{\textbf{Concurrency Control:} Built OfficeSpace, a hybrid workspace booking system, designing a schedule overlap detection query in PostgreSQL and role based access control (JWT) across two independently deployable services.}
-    % \resumeItem{\textbf{Distributed Data Consistency:} Built NeoWallet, a P2P balance transfer API on a database per service microservice architecture, implementing row level locking (SELECT FOR UPDATE) to prevent race conditions and a Saga inspired orchestration with compensating transactions for monetary consistency.}
-    % \resumeItem{\textbf{Engineering Discipline Under Constraints:} Delivered both MVPs individually within a combined ten hour window, including Docker containerization, API documentation, and test coverage exceeding 90 percent on the transfer service.}
-\resumeItemListEnd
+%\resumeItemListStart
+%    \resumeItem{\textbf{Concurrency Control:} Built "OfficeSpace" (hybrid workspace booking MVP) in a 6-hour constraint, designing a PostgreSQL schedule overlap detection query and JWT-based RBAC across two independently deployable containerized services.}
+%    \resumeItem{\textbf{Distributed Consistency:} Developed "NeoWallet", a P2P transfer API microservice within a 4-hour window; implemented row-level locking (SELECT FOR UPDATE) and a Saga-inspired orchestrator with compensating transactions, achieving over 90\% test coverage.}
+%    % \resumeItem{\textbf{Concurrency Control:} Built OfficeSpace, a hybrid workspace booking system, designing a schedule overlap detection query in PostgreSQL and role based access control (JWT) across two independently deployable services.}
+%    % \resumeItem{\textbf{Distributed Data Consistency:} Built NeoWallet, a P2P balance transfer API on a database per service microservice architecture, implementing row level locking (SELECT FOR UPDATE) to prevent race conditions and a Saga inspired orchestration with compensating transactions for monetary consistency.}
+%    % \resumeItem{\textbf{Engineering Discipline Under Constraints:} Delivered both MVPs individually within a combined ten hour window, including Docker containerization, API documentation, and test coverage exceeding 90 percent on the transfer service.}
+%\resumeItemListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Red Hat Certified System Administrator (RHCSA)} $|$ \emph{In Progress}}{Expected november 2026}
+\resumeSubHeadingListEnd
+
 
 % \resumeProjectHeading
 % {\textbf{Cellular Propagation} $|$ \emph{Python}}{2025}
