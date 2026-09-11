@@ -21,7 +21,7 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 
-\usepackage[sfdefault]{inter} % Una fuente muy usada en interfaces modernas
+\usepackage[sfdefault]{inter}
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlength{\multicolsep}{-3.0pt}
@@ -84,10 +84,10 @@
 
 \begin{document}
 
-%----------ENCABEZADO----------
+%----------HEADER----------
 \begin{center}
   {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{1pt}
-  Ciudad de México, México \\ \vspace{1pt}
+  Mexico City, Mexico \\ \vspace{1pt}
   \small \raisebox{-0.1\height}\faPhone\ +52 55 8381 2546 ~
   \href{mailto:gcarlosjael@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{gcarlosjael@gmail.com}} ~
   \href{https://www.linkedin.com/in/carlos-jael-guill%C3%A9n-gonz%C3%A1lez/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/carlos-jael}} ~
@@ -96,72 +96,63 @@
   \vspace{-8pt}
 \end{center}
 
-%-----------EDUCACIÓN-----------
-\section{Educación}
+%-----------EDUCATION-----------
+\section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Instituto Politécnico Nacional (IPN - UPIITA)}{Ago. 2021 -- Presente}
-{Licenciatura en Ingeniería en Telemática}{Ciudad de México, México}
+{National Polytechnic Institute (IPN - UPIITA)}{Aug. 2021 -- Present}
+{Bachelor of Science in Telematics Engineering}{Mexico City, Mexico}
 \resumeSubHeadingListEnd
 
-%-----------Habilidades Técnicas-----------
-\section{Habilidades Técnicas}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Lenguajes}{: JavaScript, Python, Java, Shell Scripting, VBA.} \\
+        \textbf{Languages}{: JavaScript, Python, Java, Shell Scripting, VBA.} \\
         \textbf{Frontend}{: React, Tailwind CSS, HTML/CSS.} \\
-        \textbf{Backend}{: Node.js, Express, PostgreSQL, APIs REST.} \\
+        \textbf{Backend}{: Node.js, Express, PostgreSQL, REST APIs.} \\
         \textbf{DevOps}{: Linux, Git/GitHub, Docker, Cloudflare Zero Trust, SSH.} \\
-        \textbf{Otros}{: LaTeX, Figma, Excel, OAuth2.} \\
-        \textbf{Idiomas}{: Español (Nativo), Inglés (Avanzado).} \\
+        \textbf{Other}{: LaTeX, Figma, Excel, OAuth2.} \\
+        \textbf{Languages (Spoken)}{: Spanish (Native), English (Advanced).} \\
         }}
 \end{itemize}
 
-%-----------EXPERIENCIA-----------
-\section{Experiencia}
+%-----------EXPERIENCE-----------
+\section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Desarrollador de Software Independiente}{Dic. 2024 -- Presente}
-{Full Stack \& DevOps}{Ciudad de México, México}
+{Freelance Software Developer}{Dec. 2024 -- Present}
+{Full Stack \& DevOps}{Mexico City, Mexico}
 \resumeItemListStart
-    \resumeItem{\textbf{CI/CD \& Automatización:} Pipelines de despliegue automatizados con \textbf{GitHub Actions}.}
-    \resumeItem{\textbf{Seguridad e Infraestructura:} Arquitectura de acceso sin perímetro usando \textbf{Cloudflare Zero Trust}, endurecimiento de nodos Linux bajo principios de menor privilegio.}
+    \resumeItem{\textbf{CI/CD \& Automation:} Automated deployment pipelines built with \textbf{GitHub Actions}.}
+    \resumeItem{\textbf{Security \& Infrastructure:} Perimeterless access architecture using \textbf{Cloudflare Zero Trust}, Linux node hardening under least privilege principles.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-% \vspace{3pt}
-%-----------PROYECTOS-----------
-\section{Proyectos}
+
+%-----------PROJECTS-----------
+\section{Projects}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Sistema 3D de Reconstrucción de Patrones de Radiación} $|$ \emph{JavaScript, Python}}{Oct. 2025 -- Presente}
+{\textbf{3D Radiation Pattern Reconstruction System} $|$ \emph{JavaScript, Python}}{Oct. 2025 -- Present}
 \resumeItemListStart
-    \resumeItem{\textbf{Visión Computacional:} Procesamiento de imágenes en Python para analizar patrones de radiación 2D.}
-    \resumeItem{\textbf{Renderizado 3D:} Pipeline de datos con Three.js para transformar métricas 2D en modelos 3D interactivos.}
+    \resumeItem{\textbf{Computer Vision:} Image processing in Python to analyze 2D radiation patterns.}
+    \resumeItem{\textbf{3D Rendering:} Data pipeline with Three.js to transform 2D metrics into interactive 3D models.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{carworks.dev - Portfolio Full-Stack} $|$ \emph{Node.js, React}}{Feb. 2026 -- May. 2026}
+{\textbf{carworks.dev - Full-Stack Portfolio} $|$ \emph{Node.js, React}}{Feb. 2026 -- May 2026}
 \resumeItemListStart
-    \resumeItem{\textbf{Arquitectura:} Sistema desacoplado con React (Vite) y API REST en Express, optimizado con caché HTTP y almacenamiento en Cloudflare R2.}
-    \resumeItem{\textbf{Automatización:} Pipeline GitHub Actions que procesa artículos Markdown y sincroniza datastore automáticamente.}
+    \resumeItem{\textbf{Architecture:} Decoupled system with React (Vite) and Express REST API, optimized with HTTP caching and Cloudflare R2 storage.}
+    \resumeItem{\textbf{Automation:} GitHub Actions pipeline processing Markdown articles and automatically synchronizing the datastore.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Hackathon IBM MVP} $|$ \emph{Node.js, Express, PostgreSQL}}{Junio 2026}
+{\textbf{IBM Hackathon MVP} $|$ \emph{Node.js, Express, PostgreSQL}}{June 2026}
 \resumeItemListStart
-    \resumeItem{\textbf{OfficeSpace:} Sistema de reserva de espacios con control de concurrencia en PostgreSQL y RBAC en JWT.}
-    \resumeItem{\textbf{NeoWallet:} API P2P con row-level locking y patrón Saga para consistencia distribuida.}
+    \resumeItem{\textbf{OfficeSpace:} Workspace reservation system featuring concurrency control in PostgreSQL and RBAC with JWT.}
+    \resumeItem{\textbf{NeoWallet:} P2P API using row-level locking and the Saga pattern for distributed consistency.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-% \vspace{4pt}
-%-----------LANGUAGES-----------
-% \section{Languages}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%   \small{\item{
-%         \textbf{Spanish}{: Native} \\
-%         \textbf{English}{: Advanced}
-%         }}
-% \end{itemize}
 
 \end{document}
