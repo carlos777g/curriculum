@@ -111,12 +111,11 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{JavaScript}{: Proficient in Node.js backend development, implementing OAuth2/Google Authentication, and RESTful API architecture.} \\
-        \textbf{Python}{: Focused on data science workflows, and system automation.}\\
-        \textbf{Shell Scripting}{: Experienced in automating Linux workflows.}\\
-        \textbf{Frameworks \& Libraries}{: React, Node.js, Express, Tailwind CSS.} \\
-        \textbf{Tools}{: Linux, Git/GitHub, Docker, PostgreSQL, Cloudflare Zero Trust, SSH, LaTeX, HTML/CSS, Figma, Excel.} \\
-        \textbf{Concepts}{: Data Structures \& Algorithms, Distributed Systems Design, Concurrency, Object-Oriented Programming (OOP), RESTful APIs, Agile Methodologies (Scrum).} \\
+        \textbf{Infrastructure \& Linux}{: Arch/Debian system administration, Cloudflare Zero Trust (identity-aware proxies), systemd service management, SSH, shell scripting, incident response, and filesystem troubleshooting (fsck, debugfs).} \\
+        \textbf{DevOps \& Automation}{: GitHub Actions CI/CD, Docker containerization, automated deployment pipelines.} \\
+        \textbf{Full-Stack Development}{: Node.js, Express, React, JavaScript; RESTful APIs, OAuth2 authentication.} \\
+        \textbf{Tools \& Platforms}{: Linux, Git/GitHub, Docker, Cloudflare (Tunnel, R2, Transform Rules), LaTeX, HTML/CSS.} \\
+        \textbf{Concepts}{: Distributed Systems, Concurrency, Object-Oriented Programming (OOP), Agile/Scrum.} \\
          \textbf{Languages}{: Spanish (Native), English (Advanced).} \\
         }}
 \end{itemize}
@@ -128,10 +127,10 @@
 {Independent Software Developer}{Dec. 2024 -- Present}
 {Full Stack \& DevOps (Personal Research)}{Mexico City, Mexico}
 \resumeItemListStart
-    \resumeItem{\textbf{Infrastructure \& Security:} Architected a perimeter-less access system using \textbf{Cloudflare Zero Trust} and Identity-Aware Proxies, eliminating public-facing IPs while hardening Linux nodes (Arch/Debian) under Principle of Least Privilege (PoLP) and RBAC standards.}
-\resumeItem{\textbf{Incident Response \& Root Cause Analysis:} Diagnosed and resolved a production filesystem corruption incident (ext4 metadata\_csum failure) following an unexpected power loss, performing systematic troubleshooting via \texttt{journalctl}, \texttt{fsck}, and \texttt{debugfs} while maintaining remote-only SSH access; safely unmounted and repaired a live filesystem after auditing active processes (\texttt{lsof}, \texttt{fuser}) to prevent service disruption, and identified a corrupted Docker image layer as a secondary fault through comparative re-pull analysis.}
-\resumeItem{\textbf{Systemd \& Service Management:} Administered systemd unit files and drop-in overrides to tune service behavior (transport protocol, environment variables) for a self-hosted reverse tunnel exposing multiple production services (SSH, API, media streaming) without public-facing IPs.}
-    \resumeItem{\textbf{CI/CD \& Automation:} Orchestrated automated deployment pipelines via \textbf{GitHub Actions} for personal infrastructure and web projects, incorporating automated regression checks prior to production releases.}
+    \resumeItem{\textbf{Perimeter-less Infrastructure:} Deployed Cloudflare Zero Trust with identity-aware proxies on hardened Arch/Debian nodes (PoLP/RBAC), eliminating public-facing IPs for production services.}
+\resumeItem{\textbf{Incident Response:} Diagnosed and resolved ext4 filesystem corruption after power loss using \texttt{journalctl}, \texttt{fsck}, and \texttt{debugfs}; audited processes (\texttt{lsof}, \texttt{fuser}) to safely repair live systems and identified corrupted Docker layers.}
+\resumeItem{\textbf{Service Management:} Configured systemd unit files and drop-in overrides for production reverse tunnels (SSH, API, media streaming) with tuned transport and environment settings.}
+    \resumeItem{\textbf{CI/CD Automation:} Built GitHub Actions pipelines for infrastructure and web projects with automated regression checks.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 % \vspace{3pt}
@@ -140,30 +139,25 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{carworks.dev - Full-Stack Portfolio \& Automated Logbook Ecosystem} $|$ \emph{Node.js, React}}{Feb. 2026 -- Present}
+{\textbf{carworks.dev - Infrastructure \& DevOps Automation} $|$ \emph{Cloudflare, GitHub Actions, Linux}}{Feb. 2026 --
+May. 2026}
 \resumeItemListStart
-    \resumeItem{\textbf{Full-Stack Architecture:} Developed a decoupled system using React (Vite) on the front end and an Express REST API backend on Node.js.}
-    \resumeItem{\textbf{Performance Engineering:} Reduced page weight and server load through WebP image conversion, a hand-built component layer avoiding heavy UI frameworks, HTTP caching strategy to minimize redundant server requests, and a multi-provider architecture separating static hosting (GitHub Pages), API compute (self-hosted server behind a Cloudflare Tunnel), and asset storage (Cloudflare R2).}
-    \resumeItem{\textbf{Content Pipeline Automation:} Engineered an automated workflow via a custom GitHub Actions runner that intercepts Markdown articles, processes static images, uploads them to a Cloudflare R2 storage bucket, and synchronizes the production datastore automatically.}
-    \resumeItem{\textbf{Security \& Edge Computing:} Hardened perimeter security by configuring strict Content Security Policy rules within Cloudflare Transform Rules, enabling explicit network connectivity to the API and whitelisting the R2 static asset host.}
-    \resumeItem{\textbf{Asynchronous Web Rendering:} Designed a modular frontend layout implementing react-markdown and mermaid.js to asynchronously parse text and compile infrastructure topology graphs into the virtual DOM.}
+    \resumeItem{\textbf{Multi-Provider Architecture:} Architected distributed infrastructure separating static hosting (GitHub Pages), API compute (self-hosted server behind Cloudflare Tunnel), and asset storage (Cloudflare R2), optimizing for resilience and cost-efficiency.}
+    \resumeItem{\textbf{CI/CD Pipeline Automation:} Built automated GitHub Actions workflows processing content, image optimization, and automatic deployment to Cloudflare R2 with production synchronization.}
+    \resumeItem{\textbf{Edge Security:} Configured strict Content Security Policy via Cloudflare Transform Rules and implemented network whitelisting for explicit API and asset access control.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{IBM MVP Hackathon} $|$ \emph{Node.js, Express, PostgreSQL, Docker}}{June 2026}
-%\resumeItemListStart
-%    \resumeItem{\textbf{Concurrency Control:} Built "OfficeSpace" (hybrid workspace booking MVP) in a 6-hour constraint, designing a PostgreSQL schedule overlap detection query and JWT-based RBAC across two independently deployable containerized services.}
-%    \resumeItem{\textbf{Distributed Consistency:} Developed "NeoWallet", a P2P transfer API microservice within a 4-hour window; implemented row-level locking (SELECT FOR UPDATE) and a Saga-inspired orchestrator with compensating transactions, achieving over 90\% test coverage.}
-%    % \resumeItem{\textbf{Concurrency Control:} Built OfficeSpace, a hybrid workspace booking system, designing a schedule overlap detection query in PostgreSQL and role based access control (JWT) across two independently deployable services.}
-%    % \resumeItem{\textbf{Distributed Data Consistency:} Built NeoWallet, a P2P balance transfer API on a database per service microservice architecture, implementing row level locking (SELECT FOR UPDATE) to prevent race conditions and a Saga inspired orchestration with compensating transactions for monetary consistency.}
-%    % \resumeItem{\textbf{Engineering Discipline Under Constraints:} Delivered both MVPs individually within a combined ten hour window, including Docker containerization, API documentation, and test coverage exceeding 90 percent on the transfer service.}
-%\resumeItemListEnd
+{\textbf{IBM MVP Hackathon} $|$ \emph{Microservices, PostgreSQL, Concurrency}}{June 2026}
+\resumeItemListStart
+    \resumeItem{Delivered production-grade MVPs under time constraints: distributed systems design with row-level locking and Saga-pattern orchestration; Docker containerization and API documentation.}
+\resumeItemListEnd
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
 \resumeSubHeadingListStart
     \resumeProjectHeading
-        {\textbf{Red Hat Certified System Administrator (RHCSA)} $|$ \emph{In Progress}}{Expected november 2026}
+        {\textbf{Red Hat Certified System Administrator (RHCSA)} $|$ \emph{In Progress}}{Expected december 2026}
 \resumeSubHeadingListEnd
 
 
