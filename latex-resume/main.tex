@@ -16,12 +16,12 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
 
-\usepackage[sfdefault]{inter} % Una fuente muy usada en interfaces modernas
+\usepackage[sfdefault]{inter}
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlength{\multicolsep}{-3.0pt}
@@ -86,8 +86,8 @@
 
 %----------ENCABEZADO----------
 \begin{center}
-  {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{1pt}
-  Ciudad de México, México \\ \vspace{1pt}
+  {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{2pt}
+  Ciudad de México, México $\vert$ +52 55 8381 2546 \\ \vspace{2pt}
   \href{mailto:gcarlosjael@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{gcarlosjael@gmail.com}} ~
   \href{https://www.linkedin.com/in/carlos-jael-guill%C3%A9n-gonz%C3%A1lez/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/carlos-jael}} ~
   \href{https://github.com/carlos777g}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/carlos777g}} ~
@@ -98,73 +98,70 @@
 %-----------EDUCACIÓN-----------
 \section{Educación}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Instituto Politécnico Nacional (IPN - UPIITA)}{Ago. 2021 -- Presente}
-{Licenciatura en Ingeniería en Telemática}{Ciudad de México, México}
+  \resumeSubheading
+    {Instituto Politécnico Nacional (UPIITA - IPN)}{Ciudad de México, México}
+    {Ingeniería en Telemática (Graduación esperada: Julio 2027)}{Ago. 2021 -- Presente}
+    \resumeItemListStart
+      \resumeItem{\textbf{Cursos relevantes:} Estructuras de Datos y Algoritmos, Sistemas Distribuidos, Redes de Computadoras, Programación Orientada a Objetos, Sistemas Operativos.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------Habilidades Técnicas-----------
+%-----------HABILIDADES TÉCNICAS-----------
 \section{Habilidades Técnicas}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Lenguajes}{: JavaScript, Python, Shell Scripting, Java.} \\
-        \textbf{Frontend}{: React, Tailwind CSS, HTML/CSS.} \\
-        \textbf{Backend}{: Node.js, Express, PostgreSQL, APIs REST.} \\
-        \textbf{DevOps}{: Linux, Git/GitHub, Docker, Cloudflare Zero Trust, SSH.} \\
-        \textbf{Otros}{: LaTeX, Figma, Excel, OAuth2.} \\
-        \textbf{Idiomas}{: Español (Nativo), Inglés (Avanzado).} \\
-        }}
+    \textbf{Lenguajes}{: JavaScript (ES6+), TypeScript, Python, Java, C, SQL (PostgreSQL), Shell Scripting (Bash).} \\
+    \textbf{Desarrollo Web \& Frameworks}{: Node.js, Express, React, Vite, Tailwind CSS, RESTful APIs.} \\
+    \textbf{Infraestructura \& DevOps}{: Linux (Debian/RHEL), Docker, Git/GitHub Actions, Cloudflare Zero Trust/R2, SSH.} \\
+    \textbf{Herramientas \& Conceptos}{: Algoritmos y Estructuras de Datos, Concurrencia, OAuth2, Figma, LaTeX.} \\
+    \textbf{Idiomas}{: Español (Nativo), Inglés (Avanzado / C1).}
+  }}
 \end{itemize}
 
-%-----------EXPERIENCIA-----------
-\section{Experiencia}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Desarrollador de Software Independiente}{Dic. 2024 -- Presente}
-{Full Stack \& DevOps}{Ciudad de México, México}
-\resumeItemListStart
-    \resumeItem{\textbf{Aportaciones a código libre:} He hecho pequeñas aportaciones a proyectos de código libre como
-    aonsoku.}
-    \resumeItem{\textbf{CI/CD \& Automatización:} He hecho pipelines de despliegue automatizados con \textbf{GitHub
-    Actions} para mis propios proyectos.}
-    \resumeItem{\textbf{Seguridad e Infraestructura:} Arquitectura de acceso sin perímetro usando \textbf{Cloudflare
-    Zero Trust}, endurecimiento de nodos Linux bajo principios de menor privilegio, implementado de mi servidor personal.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-% \vspace{3pt}
-%-----------PROYECTOS-----------
-\section{Proyectos}
+%-----------PROYECTOS DESTACADOS-----------
+\section{Proyectos Destacados}
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\textbf{Sistema 3D de Reconstrucción de Patrones de Radiación} $|$ \emph{JavaScript, Python}}{Feb. 2026 -- Presente}
-\resumeItemListStart
-    \resumeItem{\textbf{Visión Computacional:} Procesamiento de imágenes en Python para analizar patrones de radiación 2D.}
-    \resumeItem{\textbf{Renderizado 3D:} Pipeline de datos con Three.js para transformar métricas 2D en modelos 3D interactivos.}
-\resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Sistema de Reconstrucción 3D de Patrones de Radiación} $|$ \emph{Python, JavaScript, Three.js}}{Feb. 2026 -- Presente}
+    \resumeItemListStart
+      \resumeItem{Desarrollé un pipeline de procesamiento de imágenes con OpenCV en Python para extraer métricas y coordenadas de radiación bidimensionales a partir de fuentes vectoriales y mapas de bits.}
+      \resumeItem{Diseñé un motor de renderizado 3D en el navegador web utilizando Three.js, reduciendo el tiempo de interpretación espacial de patrones antenales al transformar datos planos en modelos volumétricos interactivos en tiempo real.}
+    \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{carworks.dev - Portfolio Full-Stack} $|$ \emph{Node.js, React}}{Ene. 2026 -- May. 2026}
-\resumeItemListStart
-    \resumeItem{\textbf{Arquitectura:} Sistema desacoplado con React (Vite) y API REST en Express, optimizado con caché HTTP y almacenamiento en Cloudflare R2.}
-    \resumeItem{\textbf{Automatización:} Pipeline GitHub Actions que procesa artículos Markdown y sincroniza datastore automáticamente.}
-\resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Arquitectura Micro-SaaS "carworks.dev"} $|$ \emph{React, Node.js, Cloudflare R2, GitHub Actions}}{Ene. 2026 -- May. 2026}
+    \resumeItemListStart
+      \resumeItem{Construí un sistema desacoplado full-stack integrando una SPA en React (Vite) con una API REST en Express, implementando estrategias de caché HTTP para acelerar la velocidad de carga general.}
+      \resumeItem{Automaticé el flujo de CI/CD mediante GitHub Actions para parsear contenido Markdown en tiempo de construcción y sincronizar el almacenamiento de objetos en Cloudflare R2 sin tiempo de inactividad.}
+    \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Hackathon IBM MVP} $|$ \emph{Node.js, Express, PostgreSQL}}{Junio 2026}
-\resumeItemListStart
-    \resumeItem{\textbf{OfficeSpace:} Sistema de reserva de espacios con control de concurrencia en PostgreSQL.}
-    \resumeItem{\textbf{NeoWallet:} API P2P con row-level locking y patrón Saga para consistencia distribuida.}
-\resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{APIs de Alta Concurrencia y Transacciones Distribuidas (IBM Hackathon)} $|$ \emph{Node.js, Express, PostgreSQL}}{Jun. 2026}
+    \resumeItemListStart
+      \resumeItem{Diseñé un backend de reserva de espacios con control de concurrencia optimista y bloqueos a nivel de fila en PostgreSQL, previniendo condiciones de carrera en transacciones simultáneas.}
+      \resumeItem{Implementé el patrón Saga en un prototipo de API de pagos P2P para garantizar la consistencia eventual entre microservicios simulados frente a fallos en la red.}
+    \resumeItemListEnd
+
 \resumeSubHeadingListEnd
-% \vspace{4pt}
-%-----------LANGUAGES-----------
-% \section{Languages}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%   \small{\item{
-%         \textbf{Spanish}{: Native} \\
-%         \textbf{English}{: Advanced}
-%         }}
-% \end{itemize}
+
+%-----------EXPERIENCIA Y PROYECTOS OPEN SOURCE-----------
+\section{Experiencia y Proyectos Open Source}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Colaborador Open Source} $|$ \emph{Git, GitHub, JavaScript/TypeScript}}{Dic. 2024 -- Presente}
+    \resumeItemListStart
+      \resumeItem{Sometí revisiones de código y correcciones de errores en repositorios comunitarios (ej. \emph{aonsoku}), mejorando la estabilidad del código base mediante Pull Requests validados por integradores del proyecto.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Administración e Infraestructura de Servidores Privados} $|$ \emph{Linux, Cloudflare Zero Trust, Docker}}{2025 -- Presente}
+    \resumeItemListStart
+      \resumeItem{Implementé una arquitectura de seguridad Zero Trust usando Cloudflare Tunnels para eliminar puertos expuestos públicamente en nodos Linux privados.}
+      \resumeItem{Configuré entornos aislados mediante Docker Compose y politicas de privilegios mínimos para la gestión eficiente de recursos en servidores personales.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 \end{document}
