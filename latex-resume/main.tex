@@ -16,7 +16,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[spanish]{babel}
+\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
 
@@ -84,10 +84,10 @@
 
 \begin{document}
 
-%----------ENCABEZADO----------
+%----------HEADER----------
 \begin{center}
   {\Huge \scshape Carlos Jael Guillén González} \\ \vspace{2pt}
-  Ciudad de México, México $\vert$ +52 55 8381 2546 \\ \vspace{2pt}
+  Mexico City, Mexico $\vert$ +52 55 8381 2546 \\ \vspace{2pt}
   \href{mailto:gcarlosjael@gmail.com}{gcarlosjael@gmail.com} $\vert$
   \href{https://www.linkedin.com/in/carlos-jael-guill%C3%A9n-gonz%C3%A1lez/}{linkedin.com/in/carlos-jael} $\vert$
   \href{https://github.com/carlos777g}{github.com/carlos777g} $\vert$
@@ -95,73 +95,72 @@
   \vspace{-8pt}
 \end{center}
 
-%-----------EDUCACIÓN-----------
-\section{Educación}
+%-----------EDUCATION-----------
+\section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Instituto Politécnico Nacional (UPIITA - IPN)}{Ciudad de México, México}
-    {Ingeniería en Telemática (Graduación esperada: 07/27)}{Ago. 2021 -- Presente}
+    {Bachelor's Degree in Telematics Engineering (Expected graduation: 07/27)}{Aug. 2021 -- Present}
     \resumeItemListStart
-      \resumeItem{\textbf{Cursos relevantes:} Estructuras de Datos y Algoritmos, Sistemas Distribuidos, Redes de Computadoras, Programación Orientada a Objetos, Sistemas Operativos.}
+      \resumeItem{\textbf{Relevant coursework:} Data Structures and Algorithms, Distributed Systems, Computer Networks, Object-Oriented Programming, Operating Systems.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------HABILIDADES TÉCNICAS-----------
-\section{Habilidades Técnicas}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Lenguajes}{: JavaScript, Python, PostgreSQL, Shell Scripting.} \\
-    \textbf{Frontend \& UI}{: HTML, CSS, React, Vite, Tailwind CSS, diseño e implementación de interfaces.} \\
+    \textbf{Languages}{: JavaScript, TypeScript, Python, SQL (PostgreSQL), Shell scripting.} \\
+    \textbf{Frontend \& UI}{: HTML, CSS, React, Vite, Tailwind CSS, interface design and implementation.} \\
     \textbf{Backend \& APIs}{: Node.js, Express, RESTful APIs.} \\
-    \textbf{Infraestructura \& DevOps}{: Linux (Debian/RHEL), Docker, Git/GitHub Actions, Cloudflare Zero Trust/R2, SSH.} \\
-    \textbf{Herramientas \& Conceptos}{: Algoritmos y Estructuras de Datos, Concurrencia, OAuth2, Figma, LaTeX.} \\
-    \textbf{Idiomas}{: Español (Nativo), Inglés avanzado (B2).}
+    \textbf{Infrastructure \& DevOps}{: Linux (Debian/RHEL), Docker, Git/GitHub Actions, Cloudflare Zero Trust/R2, SSH.} \\
+    \textbf{Tools \& Concepts}{: Data Structures and Algorithms, Concurrency, OAuth2, Figma, LaTeX.} \\
+    \textbf{Languages Spoken}{: Spanish (Native), English (B2).}
   }}
 \end{itemize}
 
-%-----------PROYECTOS DESTACADOS-----------
-\section{Proyectos Destacados}
+%-----------FEATURED PROJECTS-----------
+\section{Featured Projects}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{Sistema de Reconstrucción 3D de Patrones de Radiación} $|$ \emph{Python, JavaScript}}{Feb. 2026 -- Presente}
+    {\textbf{3D Radiation Pattern Reconstruction System} $|$ \emph{Python, JavaScript}}{Feb. 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{Desarrollé un pipeline de procesamiento de imágenes con OpenCV y Python para convertir fuentes vectoriales y mapas de bits en métricas y coordenadas de radiación bidimensionales.}
-      \resumeItem{Implementé una interfaz de visualización 3D en el navegador con Three.js que transforma datos planos
-      en modelos volumétricos interactivos para facilitar el análisis de patrones de radiación de antenas.}
+      \resumeItem{Developed an image-processing pipeline using OpenCV and Python to convert vector sources and bitmap images into two-dimensional radiation metrics and coordinates.}
+      \resumeItem{Implemented a browser-based 3D visualization interface with Three.js that transforms flat data into interactive volumetric models to support antenna radiation-pattern analysis.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{Arquitectura Micro-SaaS ``carworks.dev''} $|$ \emph{React, Node.js, Cloudflare R2, GitHub Actions}}{Feb. 2026 -- May. 2026}
+    {\textbf{personal web portfolio: ``carworks.dev''} $|$ \emph{React, Node.js, Cloudflare R2, GitHub Actions}}{Feb. 2026 -- May. 2026}
     \resumeItemListStart
-      \resumeItem{Diseñé e implementé una interfaz web responsive en React y Vite, integrada con una API REST en Express y estrategias de caché HTTP para mejorar la entrega de contenido.}
-      \resumeItem{Automaticé el flujo de CI/CD con GitHub Actions para procesar contenido Markdown durante la compilación y sincronizar objetos en Cloudflare R2 sin tiempo de inactividad.}
+      \resumeItem{Designed and implemented a responsive web interface with React and Vite, integrated with an Express REST API and HTTP caching strategies to improve content delivery.}
+      \resumeItem{Automated CI/CD with GitHub Actions to process Markdown content at build time and synchronize objects to Cloudflare R2 with zero downtime.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{APIs de Alta Concurrencia y Transacciones Distribuidas (IBM Hackathon)} $|$ \emph{Node.js, Express, PostgreSQL}}{Jun. 2026}
+    {\textbf{High-Concurrency APIs and Distributed Transactions (IBM Hackathon)} $|$ \emph{Node.js, Express, PostgreSQL}}{Jun. 2026}
     \resumeItemListStart
-      \resumeItem{Diseñé un backend de reservas con concurrencia optimista y bloqueos a nivel de fila en PostgreSQL para prevenir condiciones de carrera en transacciones simultáneas.}
-      \resumeItem{Implementé el patrón Saga en un prototipo de pagos P2P para mantener la consistencia eventual entre microservicios simulados ante fallos de red.}
+      \resumeItem{Designed a booking backend using optimistic concurrency control and PostgreSQL row-level locking to prevent race conditions in concurrent transactions.}
+      \resumeItem{Implemented the Saga pattern in a peer-to-peer payments prototype to maintain eventual consistency across simulated microservices during network failures.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{Infraestructura y Despliegue de Proyectos Personales} $|$ \emph{Linux, Cloudflare Zero Trust, Docker}}{Ene. 2026 -- Presente}
+    {\textbf{Personal Project Infrastructure and Deployment} $|$ \emph{Linux, Cloudflare Zero Trust, Docker}}{Jan. 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{Implementé una arquitectura Zero Trust con Cloudflare Tunnels para alojar proyectos personales y una web sin exponer puertos públicamente en nodos Linux.}
-      \resumeItem{Configuré entornos aislados con Docker Compose y políticas de privilegios mínimos para administrar recursos de forma segura.}
+      \resumeItem{Implemented a Zero Trust architecture with Cloudflare Tunnels to host personal projects and a website without publicly exposed ports on Linux nodes.}
+      \resumeItem{Configured isolated environments with Docker Compose and least-privilege policies for secure resource management.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%-----------EXPERIENCIA Y PROYECTOS OPEN SOURCE-----------
-\section{Experiencia y Proyectos Open Source}
+%-----------OPEN SOURCE EXPERIENCE-----------
+\section{Open Source Experience}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{Colaborador Open Source} $|$ \emph{Git, GitHub, JavaScript/TypeScript}}{Ago. 2026}
+    {\textbf{Open Source Contributor} $|$ \emph{Git, GitHub, JavaScript/TypeScript}}{Aug. 2026}
     \resumeItemListStart
-      \resumeItem{Propuse revisiones de código y correcciones de errores en repositorios comunitarios, incluido \emph{aonsoku}, mediante Pull Requests revisados y validados por integradores del proyecto.}
+      \resumeItem{Submitted code reviews and bug fixes to community repositories, including \emph{aonsoku}, through pull requests reviewed and validated by project maintainers.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
